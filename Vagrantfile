@@ -13,9 +13,6 @@ Vagrant.configure("2") do |config|
      config.landrush.guest_redirect_dns = false
    end
 
-  config.hostmanager.enabled = true
-  config.hostmanager.manage_host = true
-  config.hostmanager.ignore_private_ip = false
 
   config.vm.provision "shell", inline: <<-SHELL
     chmod +x /vagrant/*.sh
@@ -23,7 +20,7 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "1024"
+    vb.memory = "4096"
     vb.cpus   = "1"
   end
 
