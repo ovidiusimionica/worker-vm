@@ -1,4 +1,4 @@
-# Work machine Vagrant based on Centos7 with all necessary tools dor Day1-3 training 
+# Work machine Vagrant based on Centos7 with all necessary tools for Day1-3 training 
 
 ## Prerequisites
 
